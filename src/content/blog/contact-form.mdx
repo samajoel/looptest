@@ -1,9 +1,9 @@
 ---
 tag:
   - Features
-title: Contact Form
-description: Nebulix contact form, get your leads trough MailGun, Postmark or Slack!
-intro: Get your leads trough MailGun, Postmark or Slack!
+title: Presentación de Looptech
+description: Presentación de Looptech
+intro: Innovando en el Mundo de las Noticias Tecnológicas
 style:
   template: split
   card_template: grid
@@ -14,46 +14,34 @@ pubDate: 2023-10-24T10:42:11.719Z
 thumbnail: /src/assets/cosmic_contact_settings.jpeg
 ---
 
-## Getting Your Contact Form Up & Running
+<iframe
+  src="https://docs.google.com/presentation/d/e/2PACX-1vQVLO3x-Kt1IKhaae_MKhtMn3xaYs01skcy74dQoBq2ltPnU2qsQN0_ToW3u9EZOKJnkU2RlaEjnZny/embed?start=false&loop=false&delayms=3000"
+  frameborder="0"
+  width="1440"
+  height="839"
+  allowfullscreen="true"
+  mozallowfullscreen="true"
+  webkitallowfullscreen="true"
+></iframe>
 
-Nebulix contact form supports multiple topics, every topic can have their own destination email or slack channel. to open the contact dialog just create a link with `href="#contact"`
+## 1. Visión: Conectando a Latinoamérica con la Tecnología Global
 
-You can configure your contact form in the CMS under **SETTINGS > CONTACT & SOCIAL**
+Nuestra visión es crear una plataforma integral que conecte a la comunidad latinoamericana con los últimos avances tecnológicos a nivel mundial. Queremos ser la principal fuente de noticias, análisis y recursos tecnológicos en la región, empoderando a los usuarios para estar al tanto de las tendencias y participar en el diálogo global sobre la tecnología.
 
-### MailGun
+## 2. Idea de la Web: Información Accesible y Relevante
 
-For mailgun you have to add these values in your .env. the `MAILGUN_API_URL` can be `https://api.mailgun.net/v3` or `https://api.eu.mailgun.net` depending on your region.
+Nuestra web será una fuente confiable y accesible de noticias tecnológicas, diseñada para satisfacer las necesidades e intereses de los usuarios latinoamericanos. Presentaremos noticias actualizadas, análisis en profundidad, reseñas de productos y contenido educativo, todo en un formato fácil de entender y navegar.
 
-```
-MAILGUN_API_KEY=XXXXXXXXX
-MAILGUN_DOMAIN=XXXXXXXXX
-MAILGUN_API_URL=https://api.eu.mailgun.net
-```
+## 3. Propuestas para el MVP:
 
-### Postmark
+- **Contenido Curado:** Iniciaremos con una selección cuidadosa de noticias tecnológicas relevantes para la audiencia latinoamericana. Nos enfocaremos en temas de interés general, como innovaciones en tecnología móvil, avances en inteligencia artificial y emprendimiento tecnológico en la región.
 
-Add your server token to the .env.
+- **Diseño Responsivo:** Desarrollaremos una plataforma web con un diseño responsive que se adapte a diversos dispositivos, desde computadoras de escritorio hasta smartphones, asegurando una experiencia de usuario óptima para todos los usuarios.
 
-```
-POSTMARK_SERVER_TOKEN=XXXXXXXXX
-```
+- **Funcionalidades Esenciales:** Implementaremos funcionalidades básicas como navegación intuitiva, búsqueda de contenido, suscripción a boletines de noticias y opciones para compartir en redes sociales, garantizando una experiencia de usuario fluida desde el primer momento.
 
-### Slack
+- **Pruebas y Retroalimentación:** Realizaremos pruebas exhaustivas del MVP con usuarios reales para recopilar comentarios y sugerencias que nos ayuden a mejorar y refinar la plataforma antes de su lanzamiento oficial.
 
-For slack to work you first need to create an app, then add the slack token + channel id to your .env
+## 4. Conclusión: Construyendo el Futuro de la Tecnología en Latinoamérica
 
-```
-SLACK_CHANNEL_ID=XXXXXXXXX
-SLACK_TOKEN=XXXXXXXXX
-```
-
-**Create your slack app:**
-
-1. Go to [https://api.slack.com/apps](https://api.slack.com/apps)
-1. Click “Create an App” Button.
-1. Select “from scratch”
-1. Set name and workspace
-1. Go to OAuth & Permissions menu.
-1. Add Scopes ( chat:write, chat:write:customize, chat:write:public)
-1. In the left settings menu select "install app" and connect it to your workspace
-1. Now you have your **Bot User OAuth Token** this is your `SLACK_TOKEN`
+Aunque aún estamos en las primeras etapas de desarrollo, nuestra determinación por conectar a Latinoamérica con la tecnología global es firme. Con el lanzamiento de nuestro MVP, sentaremos las bases para una plataforma robusta y completa que cumpla con las necesidades de la comunidad tecnológica en la región. ¡Gracias por acompañarnos en este emocionante viaje hacia el futuro de la tecnología en Latinoamérica!
